@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: '';
+}
+
+
+
+
+
+/* global tags */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+span{
+    font-size: .9rem;
+    color: rgba(0,0,0,0.15);
+    }
+    h6{
+        font-size: 1.1rem;
+        color: black;
+    }
+
+
+
+
+    /* navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.15);
+    height: 50px;
+}
+nav img{
+    cursor: pointer;
+    
+}
+nav .navigation  ul{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+nav .navigation  ul li{
+
+    list-style: none;
+    margin-left: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    
+}
+nav .navigation  ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav .navigation  ul li a:hover{
+    color: yellow;
+    transition: 0.3sec;
+    
+}
+
+
+
+/* home */
+#home {
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("assets/pexels-vlada-karpovich-4050327.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+
+}
+#home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    line-height: 25px;
+    font-size: 0.9rem;
+
+    color: white;
+}
+#home .btn{
+    margin-top: 30px;
+
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.yellow{
+    color: white;
+    background-color:rgba(5,4,46,0.7) ;
+
+}
+#home a.yellow:hover{
+    color:rgba(5,4,46,0.7);
+    background-color: white;
+    transition: 0.3sec;
+}
+
+
+
+
+/* course */
+#coursespage{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    padding: 8vw 8vw o 8vw;
+    overflow: hidden;
+}
+form{
+    padding: 5vh ;
+    width: 100%;
+    border-radius: 5%;
+    
+}
+ 
+#coursespage .course-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+
+}
+#coursespage .courses{
+    text-align: start;
+    background: white;
+    height: 100%;
+
+}
+#coursespage .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+
+}
+#coursespage .courses .details{
+    padding: 15px 15px 0 15px;
+
+
+}
+#coursespage .courses .details i{
+    color: gold;
+}
+.search-form{
+    align-items:row;
+    align-items: center;
+}
+.search-form input{
+     width: 360px;
+     height: 30px;
+   
+    
+    
+}
+.search-form i{
+
+    align-items: center;
+    
+    
+}
+
+
+
+
+/* login page  */
+
+.row
+{
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+}
+
+
+.col-1
+
+{
+
+flex-basis: 50%;
+
+min-width: 30px;
+
+}
+
+
+.col-1
+
+{
+
+flex-basis: 50%;
+
+min-width: 300px;
+
+}
+
+
+.main-heading
+
+{
+
+    color: white;
+
+    padding-bottom: 20px;
+
+}
+
+ 
+.form
+
+{
+
+	position: relative;
+
+	margin: 0 auto 100px;
+
+	padding: 45px;
+     text-align: center;
+
+}
+.form input
+
+{
+
+	font-family: sans-serif;
+
+	outline: none;
+
+     border: none;
+    
+     border-bottom: 1px solid black;
+
+	width: 100%;
+
+	margin: 0 0 15px;
+
+	padding: 15px;
+
+	font-size: 14px;
+
+}
+
+.form button 
+
+{
+
+	font-family: sans-serif;
+
+	width: 100%;
+
+    color: white;
+
+	font-size: 14px;
+
+	cursor: pointer;
+
+	padding: 15px;
+
+    border: none;
+
+    background:rgba(5,4,46,0.7);
+
+}
+
+.form button :active{
+    background-color: white;
+    color: rgba(5,4,46,0.7);;
+}
+
+.form .message
+
+{
+
+    font-size: 12px;
+
+	margin: 15px 0 0;
+    color: white;
+
+}
+
+
+.form .message a
+
+{
+
+	color:rgba(5,4,46,0.7);
+
+	text-decoration: none;
+ padding: 10px;
+}
+
+
+
+
+.form .register-form{
+
+	display: none;
+
+}
+
+.defination
+
+{
+
+     text-align: left;
+
+     font-size: 30px;
+
+    color: white;
+
+     font-family: 'Kaushan Script', cursive;
+
+    padding-left:60px;
+
+}
+
+/* reservation */
+
+.container{
+    width: 375px;
+    height: 520px;
+  
+    border-radius: 5%;
+    
+    padding: 20px;
+    margin-top: 10%;
+    
+ 
+}
+.container form{
+    width: 100%;
+    border: 1px solid rgb(87, 72, 72);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}   
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 10px;
+
+}
+.reservation {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .reservation h2 {
+    margin-top: 0;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  .calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .slot {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slot.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .slot.disabled {
+    background-color: #ccc;
+  
+  }

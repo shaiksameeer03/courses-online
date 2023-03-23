@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online courses</title>
+    <link rel="shortcut icon" href="/assets/" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<script src="app.js"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <nav>
+        <img src="/assets/My project-1.png" alt="" width="100px" height="100px">
+        <div class="navigation"> <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+      <li><a href="#">join</a></li>
+        </ul></div>
+        </nav>
+        <!-- home -->
+        <section id="home">
+           <center>
+           
+           
+            <div class="row">
+            
+            <div class="col-1">
+            
+                 <div class="form-box">
+            
+                 <div class="form">
+            
+                 <form class="login-form">
+                                        <!-- creating the login page -->
+            <center><h1 class="main-heading">Login Form</h1></center>
+            
+                                <input type="text"placeholder="user name" />
+            
+                                <input type="password"placeholder="password"/>
+            
+                              <button > <a href="/coures.html">LOGIN </a>
+                                </button>
+            
+                                 <p class="message">Not Registered? <a href="#">Register</a></p>
+                                  <p onclick="forTabFun()">forgot password?</p>
+                            </form>
+            
+                 <form class="register-form">
+                    
+                         <center><h1 class="main-heading" onclick="regTabFun()" >Register Form</h1></center>
+            
+                              
+            
+                            <input type="email" placeholder="email-id"/>
+            
+                                 
+                            <input type="password" placeholder="password"/>
+                            <input type="password" placeholder="re-type password"/>
+            
+                            <button > <a href=""> REGISTER </a> </button>
+                
+                                 <p class="message">Already Registered?<a href="#">Login</a>
+            
+                            </p>
+            
+                </form>
+            
+                        </div>
+            
+                     </div>
+            
+                </div>
+        </div>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+
+         </script>
+        
+            <script>
+        
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+        
+     
+        </script>
+        
+            
+              </center>
+  
+        </section>
+
+
+    
+</body>
+</html>
